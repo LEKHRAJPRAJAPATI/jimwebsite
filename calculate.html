@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input {
+            padding: 5px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        function calculateFitness() {
+            // Get input values
+            var age = parseFloat(document.getElementById('age').value);
+            var weight = parseFloat(document.getElementById('weight').value);
+            var height = parseFloat(document.getElementById('height').value);
+
+            // Simple fitness calculation (you can customize this based on your criteria)
+            var fitness = (weight / (age * height)) * 10000;
+
+            // Display the result
+            document.getElementById('result').innerHTML = 'Fitness: ' + fitness.toFixed(2);
+        }
+    </script>
+</head>
+<body>
+    <h2>Customer Fitness Calculator</h2>
+
+    <label for="age">Age:</label>
+    <input type="text" id="age" placeholder="Enter age">
+
+    <label for="weight">Weight (kg):</label>
+    <input type="text" id="weight" placeholder="Enter weight">
+
+    <label for="height">Height (cm):</label>
+    <input type="text" id="height" placeholder="Enter height">
+
+    <button onclick="calculateFitness()">Calculate Fitness</button>
+
+    <div id="result"></div>
+    <section>
+        <div class="container"> <a href="Home.html">Home</a>
+        </div>
+      </section>
+</body>
+</html>

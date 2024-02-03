@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lekhraj fitness</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+<style>
+    /*CSS Reset */
+    body {
+        font-family: "Sofia", sans-serif;
+        color: #ffffff;
+        margin: 0px;
+        padding: 0px;
+        background-image: url('risen-wang-20jX9b35r_M-unsplash.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: block;
+        /* <img src=".vscode/OIP.jpeg" alt="Sorry" width="500px" height="500px"> */
+
+        /* width: 1000px;
+        height: 1000px;  */
+    }
+
+    .left {
+        position: absolute;
+        left: 34px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid #ff0000; */
+    }
+
+    .left img {
+        width: 136px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        text-align: center;
+        line-height: 19px;
+        font-size: 20px;
+    }
+
+    .mid {
+
+        display: block;
+        width: 50%;
+        margin: 20px auto;
+        /* border: 2px solid #008000; */
+
+
+
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+
+        /* border: 2px solid #ffff00; */
+
+    }
+
+    .navbar {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li {
+        display: inline-block;
+        /* font-size: 25px; */
+    }
+
+    .navbar li a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 34px 23px;
+
+
+    }
+
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: #808080;
+
+
+    }
+
+    .btn {
+
+        font-family: "Sofia", sans-serif;
+
+        margin: 0px 9px;
+        background-color: #000000;
+        color: #ffffff;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 18px;
+        cursor: pointer;
+
+    }
+
+    .btn:hover {
+        background-color: rgb(49, 44, 44);
+
+    }
+
+    .container {
+        /* border: 2px solid #008000; */
+        margin: 96px 80px;
+        padding: 75px;
+        width: 33%;
+        /* border-radius: 28px; */
+    }
+
+    .form-group input {
+        font-family: "Sofia", sans-serif;
+
+        text-align: center;
+        display: block;
+        padding: 4px;
+        width: 500px;
+        border: 2px solid #000000;
+        margin: 3px auto;
+        font-size: 20px;
+
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        margin: auto;
+        width: 500px;
+        margin: 5px;
+
+    }
+</style>
+
+<body>
+    <!-- <img src=".vscode/OIP.jpeg" alt="Sorry" width="1500px" height="1500px"> -->
+
+
+    <header class="header">
+        <!--Left box for logo -->
+        <div class="left">
+            <img src="./OIP (1).jpeg" alt="Sorry! Technical issue">
+            <!-- <div>Fitness Club</div>  -->
+        </div>
+        <!-- mid box for navbar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="calculate.html">Fitness Calculator</a></li>
+                <li><a href="ContactUs.html">Contact Us </a></li>
+            </ul>
+        </div>
+        <!-- Right box for buttons-->
+        <div class="right">
+            <button class="btn">Call Us Now</button><button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1 style="color:#a9a9a9">Join the best gym of bhopal now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+        </form>
+        <button class="btn">Submit</button>
+    </div>
+
+
+</body>
+
+</html>
